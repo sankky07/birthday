@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Operation Techie45</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="mission-container" id="missionContainer">
+    <h1>🕵️‍♂️ Mission: Operation Techie45</h1>
+    <p class="mission-intro">Welcome, Agent Techie Uncle.<br>This mission is classified. Complete the 3 tasks to unlock your surprise.</p>
+
+    <!-- 🔐 Mission 1 -->
+    <div class="mission" id="mission1">
+      <h2>🔐 Mission 1: Crack the Code</h2>
+      <p>Enter the 4-digit launch code. Hints: “You moved through cities.  
+        It moved with you — silently, faithfully.  
+        Not a GPS, not a SIM…  
+        but it was always with you.”</p>
+      <input type="text" id="codeInput" maxlength="4" placeholder="____">
+      <button onclick="checkCode()">Submit</button>
+      <p id="codeFeedback"></p>
+    </div>
+
+    <!-- 🧠 Mission 2 -->
+    <div class="mission hidden" id="mission2">
+      <h2>🧠 Mission 2: Emoji Decoder</h2>
+      <p>💤😴🎧👃➡️❓<br> Decode this… the answer is one word.</p>
+      <input type="text" id="emojiInput" placeholder="Type your guess">
+      <button onclick="checkEmoji()">Submit</button>
+      <p id="emojiFeedback"></p>
+    </div>
+
+    <!-- 🍬 Mission 3 + 🎉 Final Message -->
+    <div class="mission hidden" id="mission3">
+      <h2>🍬 Mission 3: Sweet Tooth Decryption</h2>
+      <p>What was your go-to celebratory sweet, Agent?<br>
+         Hint: Some like the burned part some like the white part.</p>
+      <input type="text" id="sweetInput" placeholder="Enter sweet name">
+      <button onclick="checkSweet()">Submit</button>
+      <p id="sweetFeedback"></p>
+
+      <!-- 🎉 Final Surprise Message -->
+      <div class="final-message hidden" id="finalMessage">
+        <h2>🎉 Mission Complete!</h2>
+        <p>Happy 45th Birthday, Techie Uncle!<br>
+        You've officially completed Operation Techie45.</p>
+        <a href="birthday_card.pdf" download>🎁 Download Your Birthday Card</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
