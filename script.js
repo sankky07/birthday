@@ -27,7 +27,7 @@ function checkEmoji() {
 function checkSweet() {
   const input = document.getElementById("sweetInput").value.toLowerCase().trim();
   const feedback = document.getElementById("sweetFeedback");
-  if (input.includes("chenapudo") || input.includes("chena pudo")) {
+  if (input.includes("chenapodo") || input.includes("chena podo")) {
     feedback.textContent = "✅ Correct! Final message unlocked!";
     document.getElementById("finalMessage").classList.remove("hidden");
   } else {
